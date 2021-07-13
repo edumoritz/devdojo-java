@@ -8,7 +8,8 @@ public class CalculadoraTest {
 //        Aula01();
 //        Aula02();
 //        Aula03();
-        Aula04();
+//        Aula04();
+        Aula05();
 
     }
 
@@ -42,5 +43,12 @@ public class CalculadoraTest {
         System.out.println("Dentro CalculadoraTest04");
         System.out.println("Num1 "+a);
         System.out.println("Num2 "+b);
+    }
+
+    private static void Aula05() {
+        Calculadora calculadora = new Calculadora();
+        int[] numeros = {1,2,3,4,5};
+        calculadora.somaArray(numeros);
+        calculadora.somaVarArgs(1,2,3,4,5,6,7);
     }
 }
