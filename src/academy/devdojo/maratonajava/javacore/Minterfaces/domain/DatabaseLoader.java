@@ -15,4 +15,8 @@ public class DatabaseLoader implements DataLoader, DataRemover {
     public void remove() {
         System.out.println("Removendo dados do banco de dados");
     }
+
+    public static void retrieveMaxDataSize(){
+        System.out.println("Dentro do retrieveMaxDataSize na classe DatabaseLoader");
+    }
 }
