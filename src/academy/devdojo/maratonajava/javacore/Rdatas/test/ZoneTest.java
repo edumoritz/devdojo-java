@@ -14,9 +14,11 @@ public class ZoneTest {
         LocalDateTime now = LocalDateTime.now();
         System.out.println(now);
 
+        // Retorna o mesmo horario do pc porem com + 9 horas sinalizado pois tokyo está a 9horas na frente
         ZonedDateTime zonedDateTime = now.atZone(tokyoZone);
         System.out.println(zonedDateTime);
 
+        // Com o Instant será retornado o horario já calculado e tbm irá mostrar o + 9 horas
         Instant nowInstant = Instant.now();
         System.out.println(nowInstant);
         ZonedDateTime zonedDateTime2 = nowInstant.atZone(tokyoZone);
